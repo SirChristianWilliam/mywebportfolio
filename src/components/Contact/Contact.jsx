@@ -1,14 +1,12 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 
-function HomePage() {
+function Contact() {
   return (
     <div className="container">
-      <div>
-        <p>Homie!</p>
-      </div>
+     <h1>contact page</h1>
     </div>
   );
 }
 
-export default HomePage;
+export default Contact;

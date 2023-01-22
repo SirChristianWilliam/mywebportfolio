@@ -15,18 +15,39 @@ import HomePage from '../HomePage/HomePage';
 import MissingLink from '../MissingLink/MissingLink';
 import Nav from '../Nav/Nav';
 import QueerspaceCollective from '../QueerspaceCollective/QueerspaceCollective';
-
+import Contact from '../Contact/Contact';
+import './App.css';
 function App() {
 
   return (
     <BrowserRouter>
-    <Route path="/about" component={AboutPage} />
-    <Route path="/home" component={HomePage} />
-    <Route path="/nav" component={Nav} />
-    <Route path="/queerspaceCollective" component={QueerspaceCollective} /> 
-    <Route path="/missingLink" component={MissingLink} />
-    <Route path="/footer" component={Footer} />
+    <Nav/>
+    <Route path="/about">
+    <AboutPage/>
+      </Route>
 
+    <Route path="/home">
+      <HomePage/>
+    </Route>
+    <Route path="/nav">
+      <Nav/>
+    </Route>
+    <Route path="/queerspaceCollective">
+      <QueerspaceCollective/>
+    </Route>
+   
+    <Route path="/missingLink">
+      <MissingLink/>
+    </Route>
+
+    <Route path="/footer">
+      <Footer/>
+    </Route>
+      
+      
+    <Route path="/contact">
+      <Contact/>
+    </Route>
   </BrowserRouter>
   );
 }
