@@ -1,0 +1,10 @@
+.profileImgContainer {
+    text-align: center;
+ }
+ .profileImgContainer img {
+    border:1px solid black;
+    border-radius:10%;
+    margin:auto;
+    box-shadow:0px 0px 50px tan;
+
+ }

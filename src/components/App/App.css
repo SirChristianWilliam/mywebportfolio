@@ -5,6 +5,11 @@
 }
 
 body {
-    
+    /* background-image: url('/public/images/techbackground.png'); */
+    /* background-image: url('/public/images/goldtechback.png'); */
+    background-image: url('/public/images/lightback.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
 }
  

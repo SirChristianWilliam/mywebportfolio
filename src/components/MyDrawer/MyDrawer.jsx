@@ -33,12 +33,14 @@ function MyDrawer() {
     
       const list = (anchor) => (
         <Box
-          sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+          className="drawerBg"
+          sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250}}
           role="presentation"
           onClick={toggleDrawer(anchor, false)}
           onKeyDown={toggleDrawer(anchor, false)}
         >
-          <List className='drawerList'>
+          <List className='drawerList' >
+            <h3>Projects</h3>
               <Link to="/MissingLink">
                 <p>Missing Link</p>
               </Link>
@@ -60,8 +62,10 @@ function MyDrawer() {
           </List>
 
           <Divider />
+          
 
-          <List>
+          <List className="drawerList" >
+          <h3>Socials</h3>
               <Link to="/LinkedIn">
               <p>LinkedIn</p>
             </Link> 
@@ -75,6 +79,10 @@ function MyDrawer() {
              <p>Resumé</p>
            </Link> 
           </List>
+          <Divider />
+          <Link to="/">
+             <p>Home</p>
+           </Link> 
         </Box>
       );
   return (
@@ -82,7 +90,7 @@ function MyDrawer() {
        
       {['Explore'].map((anchor) => (
         <React.Fragment key={anchor} >
-          <Button onClick={toggleDrawer(anchor, true)}><MenuIcon /> {anchor}</Button>
+          <Button onClick={toggleDrawer(anchor, true)} style={{color:'#e0d0d0'}}>  <MenuIcon /> &nbsp; &nbsp;{anchor}</Button>
           
           <Drawer
             anchor={anchor}

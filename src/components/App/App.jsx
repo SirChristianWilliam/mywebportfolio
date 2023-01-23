@@ -16,12 +16,14 @@ import MissingLink from '../MissingLink/MissingLink';
 import Nav from '../Nav/Nav';
 import QueerspaceCollective from '../QueerspaceCollective/QueerspaceCollective';
 import Contact from '../Contact/Contact';
+import Landing from '../Landing/Landing';
 import './App.css';
 function App() {
 
   return (
     <BrowserRouter>
     <Nav/>
+   
     <Route path="/about">
     <AboutPage/>
       </Route>
@@ -48,6 +50,8 @@ function App() {
     <Route path="/contact">
       <Contact/>
     </Route>
+
+    <Route exact path="/" component={Landing}/>
   </BrowserRouter>
   );
 }
