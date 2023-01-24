@@ -134,7 +134,7 @@ function Nav() {
                 {pages[3]}
               </Button>
               </Link>
-              <Link to="/GitHub">
+              <a href="https://github.com/SirChristianWilliam" target="_blank">
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -146,8 +146,9 @@ function Nav() {
               >
                 {pages[4]}
               </Button>
-              </Link>
-              <Link to="/LinkedIn">
+              </a>
+                           
+              <a href="https://www.linkedin.com/in/christian-maki/" target="_blank">
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -159,8 +160,8 @@ function Nav() {
               >
                 {pages[5]}
               </Button>
-              </Link>
-            </Box>
+              </a>
+             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">

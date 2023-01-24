@@ -18,7 +18,7 @@ import QueerspaceCollective from '../QueerspaceCollective/QueerspaceCollective';
 import Contact from '../Contact/Contact';
 import Landing from '../Landing/Landing';
 import LinkedIn from '../LinkedIn/LinkedIn';
-
+import Resume from '../Resume/Resume';
 import './App.css';
 function App() {
 
@@ -43,7 +43,9 @@ function App() {
     <Route path="/missingLink">
       <MissingLink/>
     </Route>
-
+    <Route path="/Resume">
+      <Resume/>
+    </Route>
     <Route path="/footer">
       <Footer/>
     </Route>
