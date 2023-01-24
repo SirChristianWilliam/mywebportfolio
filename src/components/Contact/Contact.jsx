@@ -21,7 +21,7 @@ const icon = (
 const icon2 = (
   <Paper sx={{ m: 4 }} elevation={5} className="contactPaperContainer">
    <div className="paperContent">
-    <h2>Phone Number</h2>
+    <h2>Phone</h2>
     <h2 className="tellyOuter">
       <a href="tel:3202799904" ><img src={"images/phone.png"} className="telly"/></a></h2>
     </div>
