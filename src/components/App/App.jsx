@@ -17,13 +17,15 @@ import Nav from '../Nav/Nav';
 import QueerspaceCollective from '../QueerspaceCollective/QueerspaceCollective';
 import Contact from '../Contact/Contact';
 import Landing from '../Landing/Landing';
+import LinkedIn from '../LinkedIn/LinkedIn';
+
 import './App.css';
 function App() {
 
   return (
     <BrowserRouter>
     <Nav/>
-   
+    
     <Route path="/about">
     <AboutPage/>
       </Route>
@@ -45,7 +47,10 @@ function App() {
     <Route path="/footer">
       <Footer/>
     </Route>
-      
+
+    <Route path="/linkedIn">
+      <LinkedIn/>
+    </Route>
       
     <Route path="/contact">
       <Contact/>

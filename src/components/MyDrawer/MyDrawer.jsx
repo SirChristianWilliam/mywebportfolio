@@ -78,11 +78,13 @@ function MyDrawer() {
              <Link to="/Resume">
              <p>Resumé</p>
            </Link> 
-          </List>
+          
           <Divider />
+          
           <Link to="/">
-             <p>Home</p>
+          <h3>Go Back to Home</h3>
            </Link> 
+           </List>
         </Box>
       );
   return (

@@ -1,10 +1,53 @@
 .profileImgContainer {
-    text-align: center;
- }
- .profileImgContainer img {
-    border:1px solid black;
-    border-radius:10%;
-    margin:auto;
-    box-shadow:0px 0px 50px tan;
+  position: relative;
+  /* overflow:hidden; */
+}
+.profileImgContainer img {
+  border: 1px solid black;
+  border-radius: 20% 20% 20% 0;
+  /* margin:auto; */
+  box-shadow: 0px 0px 50px tan, -2px 4px 15px black;
+  
+}
+.profileImgContainer img:hover {
+   box-shadow: 0px 0px 50px tan;
+}
+.profileImgContainer img:active, .profileImgContainer:active .landingAboutContainer {
+   border:3px solid green;
+   animation-name: spin;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction: normal;
+   animation-duration: 1s;
+}
 
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+
+      transform: rotate(360deg)
+   }
+}
+
+.landingPageContainer {
+  display: flex;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+.landingAboutContainer {
+  border: 1px solid black;
+  border-radius: 0 50% 0 0;
+  position: absolute;
+  bottom:1.5%;
+  /* left:5%; */
+  color: black;
+  z-index: 2;
+  background-color:rgba(213,181,143,.8);
+  padding:10px;
+  text-shadow:0px 0px 1px black, 0px 0px 5px antiquewhite;
  }
