@@ -11,7 +11,7 @@ function Resume() {
         </h3>
         <iframe
           width="75%"
-          height="1500px"
+          height="1100px"
           src="images/Christian Maki Resume.pdf"
           title="My Resume"
         ></iframe>
