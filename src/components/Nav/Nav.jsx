@@ -83,17 +83,17 @@ function Nav() {
               }}
             >
               <Link to="/">
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 3,
-                  color: "#e0d0d0",
-                  display: "block",
-                  padding: "15px",
-                }}
-              >
-                {pages[0]}
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 3,
+                    color: "#e0d0d0",
+                    display: "block",
+                    padding: "15px",
+                  }}
+                >
+                  {pages[0]}
+                </Button>
               </Link>
               <Link to="/Contact">
                 <Button
@@ -109,59 +109,64 @@ function Nav() {
                 </Button>
               </Link>
               <Link to="About">
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 3,
-                  color: "#e0d0d0",
-                  display: "block",
-                  padding: "15px",
-                }}
-              >
-                {pages[2]}
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 3,
+                    color: "#e0d0d0",
+                    display: "block",
+                    padding: "15px",
+                  }}
+                >
+                  {pages[2]}
+                </Button>
               </Link>
               <Link to="/Resume">
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 3,
-                  color: "#e0d0d0",
-                  display: "block",
-                  padding: "15px",
-                }}
-              >
-                {pages[3]}
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 3,
+                    color: "#e0d0d0",
+                    display: "block",
+                    padding: "15px",
+                  }}
+                >
+                  {pages[3]}
+                </Button>
               </Link>
               <a href="https://github.com/SirChristianWilliam" target="_blank">
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 3,
-                  color: "#e0d0d0",
-                  display: "block",
-                  padding: "15px",
-                }}
-              >
-                {pages[4]}
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 3,
+                    color: "#e0d0d0",
+                    display: "block",
+                    padding: "15px",
+                  }}
+                >
+                  {pages[4]}
+                </Button>
               </a>
-                           
-              <a href="https://www.linkedin.com/in/christian-maki/" target="_blank">
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 3,
-                  color: "#e0d0d0",
-                  display: "block",
-                  padding: "15px",
-                }}
+
+              <a
+                href="https://www.linkedin.com/in/christian-maki/"
+                target="_blank"
               >
-                {pages[5]}
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 3,
+                    color: "#e0d0d0",
+                    display: "block",
+                    padding: "15px",
+                  }}
+                >
+                  {pages[5]}
+                </Button>
               </a>
-             </Box>
+            </Box>
+
+            {/* Nav bar right */}
 
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
@@ -169,6 +174,7 @@ function Nav() {
                   <Avatar alt="fda😆" src="./images/mePro2.jpg" />
                 </IconButton>
               </Tooltip>
+
               <Menu
                 sx={{ mt: "45px" }}
                 id="menu-appbar"
@@ -185,11 +191,49 @@ function Nav() {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
-                  </MenuItem>
-                ))}
+                <MenuItem key={settings} onClick={handleCloseUserMenu}>
+                  <Button>
+                    <Typography textAlign="center">
+                      <a
+                      className="hideLine"
+                        href="https://www.linkedin.com/in/christian-maki/"
+                        target="_blank"
+                      >
+                        {settings[0]}
+                      </a>
+                    </Typography>
+                  </Button>
+
+                  <Button >
+                    <Typography textAlign="center">
+                      <a
+                        className="hideLine"
+                        href="https://github.com/SirChristianWilliam"
+                        target="_blank"
+                      >
+                        {settings[1]}
+                      </a>
+                    </Typography>
+                  </Button>
+
+                  <Button>
+                    <Typography textAlign="center">
+                      <Link to="/resume" className="hideLine">{settings[2]}</Link>
+                    </Typography>
+                  </Button>
+
+                  <Button>
+                    <Typography textAlign="center">
+                      <Link to="/about" className="hideLine">{settings[3]}</Link>
+                    </Typography>
+                  </Button>
+
+                  <Button>
+                    <Typography textAlign="center">
+                      <Link to="/contact" className="hideLine">{settings[4]}</Link>
+                    </Typography>
+                  </Button>
+                </MenuItem>
               </Menu>
             </Box>
           </Toolbar>

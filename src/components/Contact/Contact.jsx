@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import Nav from "../Nav/Nav";
 import Box from "@mui/material/Box";
 import Switch from "@mui/material/Switch";
@@ -40,13 +41,31 @@ const icon3 = (
 );
 
 function Contact() {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const location = useLocation();
+  const isFirstRender = useRef(true);
+
+  useEffect(() => {
+    if (!isFirstRender.current) {
+      setIsVisible(false);
+    }
+    isFirstRender.current = false;
+  }, [location.pathname]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+  }, [isVisible]);
+  
   const [checked, setChecked] = React.useState(false);
   const handleChange = () => {
     setChecked((prev) => !prev);
   };
   return (
     <>
-      <Box sx={{ height: 180 }} className="contactContainer">
+      <Box sx={{ height: 180 }} className={`fade-in ${isVisible ? 'visible' : 'hidden'} contactContainer`}>
         <FormControlLabel
           className="toggleLabel"
           control={<Switch checked={checked} onChange={handleChange} />}

@@ -1,22 +1,44 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import "./AboutPage.css";
 function AboutPage() {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const location = useLocation();
+  const isFirstRender = useRef(true);
+
+  useEffect(() => {
+    if (!isFirstRender.current) {
+      setIsVisible(false);
+    }
+    isFirstRender.current = false;
+  }, [location.pathname]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+  }, [isVisible]);
+
+  
   return (
     <>
-      <div className="aboutContainer">
+      <div id="aboutContainer"  className={`fade-in ${isVisible ? 'visible' : 'hidden'}`}>
         <h1>My Journey</h1>
 
         <p>
           All my life, I've been fascinated by the unknown. Existential dread
           was a staple of my childhood. When I listen to music, look at art, or
           read a good book, I always think about the creative process that goes
-          into it. I listen to specific notes, consider the brush strokes, and{" "}
-          <i>feel</i> the poetry of words written on each page.
+          into it. I <i>hear</i> the specific notes, consider the brush strokes, and{" "}
+          <i>feel</i> the poetry of words written on each page. Yeah, that sounds pretentious now that I'm reading 
+          it back, but it's nonetheless true! 
         </p>
         <p>
           Having this perspective, this curiosity, led me down unconventional
           paths. I thought to myself that there's no reason I can't do these
-          things, and I wanted to prove it to myself. I've dabbled in a lot of
+          things, to <i>create</i>, and I wanted to prove it to myself. I've dabbled in a lot of
           different mediums due to this thought process.
         </p>
         <p>
@@ -53,7 +75,7 @@ function AboutPage() {
           the first year or so, I was doing absolutely nothing to challenge
           my mind. That creativity I've always had lay unused and covered in dust. Over the years the
           dull roar got louder and louder and louder, until one day I wasn't in a great place, mentally. I
-          realized I absolutely couldn't go on like this and needed to seriously make a change.
+          realized I absolutely couldn't go on like this and needed to make a change.
         </p>
         <p>
           Covid struck everyone by surprise in 2019. As I was living with my
@@ -73,7 +95,7 @@ function AboutPage() {
           felt a dread like I've never had before on top of dealing with the loss of my dad. I thought about spending the
           rest of my life working in restaurants and continuing to be that robot
           that did the same routine, day-in day-out. I thought about what my dad
-          would think if I made nothing of my life, and didn't pursue my
+          would think if I made nothing of my life and didn't pursue my
           passions. But, as is the way of a responsible adult, I went back.
         </p>
         <p>
@@ -82,10 +104,10 @@ function AboutPage() {
           highschool; "What career would I enjoy where I'm able to express my creativity and challenge my mind?"        
           </p>
         <p>
-          One idea that crossed my brain- <i>programming</i>. The second I had
+          One idea that crossed my brain- <i>programming!</i> The second I had
           this thought, I made the connection that I already have experience
-          coding- with Scratch! I felt a little... "dull", for not piecing together
-          earlier that I already had experience in this area, but I didn't let that stop
+          coding, putting in all those hours on Scratch. I felt a little... "dull", for not piecing together
+          earlier that I already had some experience in this area, but I didn't let that stop
           me from immediately researching what I needed to do to break into the
           industry.
         </p>
@@ -113,13 +135,13 @@ function AboutPage() {
           application that finds patients with diagnosed medical conditions and
           compare their respective attributes with eachother. I intend to
           develop this project further in the future for the entire world to
-          use. The potential is vast and will assist researchers find
+          use. The potential is vast and will assist researchers with finding
           cures for currently "incurable" diseases/conditions (Click "explore" at the top 
           left of this page to experience the demo).
         </p>
         <p>
           Prime Digital Academy taught me so much and filled in those gaps I was
-          missing from my year of self-study. I practiced peer review, worked and led group projects,
+          missing from my year of self-study. I practiced peer review, participated and led group projects,
           received real work experience with real companies, developed Full Stack
           applications, and developed my leadership abilities further than I had
           thought possible. Most importantly, I developed a portfolio showcasing

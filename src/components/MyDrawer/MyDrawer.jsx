@@ -87,7 +87,7 @@ function MyDrawer() {
   );
   return (
     <div className="drawerContainer">
-      {["Explore"].map((anchor) => (
+      {["Projects & More"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button
             onClick={toggleDrawer(anchor, true)}
