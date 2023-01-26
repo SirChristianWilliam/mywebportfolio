@@ -30,7 +30,7 @@ function Landing() {
       <div className={`fade-in ${isVisible ? 'visible' : 'hidden'} landingPageContainer`}>
         
         <div className="profileImgContainer">
-          <img src="/images/mePro2.jpg" width="400px" />
+          <img src="/ignoredImages/mePro2.jpg" width="400px" />
           <div className="landingAboutContainer">
           <h2>Christian W Maki </h2>
           <h3>

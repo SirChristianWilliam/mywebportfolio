@@ -136,7 +136,7 @@ function AboutPage() {
           compare their respective attributes with eachother. I intend to
           develop this project further in the future for the entire world to
           use. The potential is vast and will assist researchers with finding
-          cures for currently "incurable" diseases/conditions (Click "explore" at the top 
+          cures for currently "incurable" diseases/conditions (Click "Projects &#38; More" at the top 
           left of this page to experience the demo).
         </p>
         <p>

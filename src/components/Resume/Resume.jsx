@@ -30,7 +30,7 @@ function Resume() {
        <div className={`fade-in ${isVisible ? 'visible' : 'hidden'} resumeContainer`}>
         <h3 className="clickToOpen">
           <a href="images/Christian Maki Resume.pdf" target="_blank">
-            Click here to view Resume in new tab
+            If you can't see resumé, click here to view in a new tab
           </a>
         </h3>
         <iframe

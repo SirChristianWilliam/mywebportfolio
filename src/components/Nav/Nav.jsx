@@ -164,6 +164,8 @@ function Nav() {
                   {pages[5]}
                 </Button>
               </a>
+
+              
             </Box>
 
             {/* Nav bar right */}
@@ -231,6 +233,12 @@ function Nav() {
                   <Button>
                     <Typography textAlign="center">
                       <Link to="/contact" className="hideLine">{settings[4]}</Link>
+                    </Typography>
+                  </Button>
+
+                  <Button>
+                    <Typography textAlign="center">
+                      <Link to="/" className="hideLine">{settings[5]}</Link>
                     </Typography>
                   </Button>
                 </MenuItem>

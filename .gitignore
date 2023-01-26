@@ -1,1 +1,4 @@
 node_modules
+
+public/ignoredImages
+public/images
