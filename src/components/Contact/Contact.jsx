@@ -24,7 +24,7 @@ const icon2 = (
    <div className="paperContent">
     <h2>Phone</h2>
     <h2 className="tellyOuter">
-      <a href="tel:3202799904" ><img src={"images/phone.png"} className="telly"/></a></h2>
+      <a href="tel:3202799904" ><img src={"ignoredImages/phone.png"} className="telly"/></a></h2>
     </div>
   </Paper>
 );
@@ -34,7 +34,7 @@ const icon3 = (
     <div className="paperContent">
     <h2>LinkedIn</h2>
     <a href="https://www.linkedin.com/in/christian-maki/" target="/blank">
-      <img className="diversity" src={"images/diversity.png"}/>
+      <img className="diversity" src={"ignoredImages/diversity.png"}/>
       </a>
     </div>
    </Paper>

@@ -173,7 +173,7 @@ function Nav() {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="fda😆" src="./images/mePro2.jpg" />
+                  <Avatar alt="fda😆" src="./ignoredImages/mePro2.jpg" />
                 </IconButton>
               </Tooltip>
 
