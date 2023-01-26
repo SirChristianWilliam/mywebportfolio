@@ -164,13 +164,11 @@ function Nav() {
                   {pages[5]}
                 </Button>
               </a>
-
-              
             </Box>
 
             {/* Nav bar right */}
-
-            <Box sx={{ flexGrow: 0 }}>
+            {/*  */}
+            <Box sx={{ transform: "translateZ(0px)", flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar alt="fda😆" src="./ignoredImages/mePro2.jpg" />
@@ -197,7 +195,7 @@ function Nav() {
                   <Button>
                     <Typography textAlign="center">
                       <a
-                      className="hideLine"
+                        className="hideLine"
                         href="https://www.linkedin.com/in/christian-maki/"
                         target="_blank"
                       >
@@ -206,7 +204,7 @@ function Nav() {
                     </Typography>
                   </Button>
 
-                  <Button >
+                  <Button>
                     <Typography textAlign="center">
                       <a
                         className="hideLine"
@@ -220,25 +218,33 @@ function Nav() {
 
                   <Button>
                     <Typography textAlign="center">
-                      <Link to="/resume" className="hideLine">{settings[2]}</Link>
+                      <Link to="/resume" className="hideLine">
+                        {settings[2]}
+                      </Link>
                     </Typography>
                   </Button>
 
                   <Button>
                     <Typography textAlign="center">
-                      <Link to="/about" className="hideLine">{settings[3]}</Link>
+                      <Link to="/about" className="hideLine">
+                        {settings[3]}
+                      </Link>
                     </Typography>
                   </Button>
 
                   <Button>
                     <Typography textAlign="center">
-                      <Link to="/contact" className="hideLine">{settings[4]}</Link>
+                      <Link to="/contact" className="hideLine">
+                        {settings[4]}
+                      </Link>
                     </Typography>
                   </Button>
 
                   <Button>
                     <Typography textAlign="center">
-                      <Link to="/" className="hideLine">{settings[5]}</Link>
+                      <Link to="/" className="hideLine">
+                        {settings[5]}
+                      </Link>
                     </Typography>
                   </Button>
                 </MenuItem>
