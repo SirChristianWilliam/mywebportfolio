@@ -98,6 +98,7 @@ function SwipeableTextMobileStepper() {
         isVisible ? "visible" : "hidden"
       } landingPageContainer`}
     >
+      <a href="https://missinglinksolo.herokuapp.com/#/" target="_blank" className="mlh1"> Missing Link</a>
       <Box sx={{ flexGrow: 1 }} className="imageBox">
         <Paper
          className="bannerTop"
@@ -106,6 +107,7 @@ function SwipeableTextMobileStepper() {
           sx={{
             display: "flex",
             alignItems: "center",
+            justifyContent:"center",
             height: 50,
             pl: 2,
           }}
@@ -190,7 +192,7 @@ function SwipeableTextMobileStepper() {
           if a business in that same city had a chemical spill 20 years prior. Or, let's say 85% 
           of all patients with ALS reported being left handed. Researchers will use this data 
           to pave the way for future medical trials and testing, using the power of Missing Link to 
-          guide them there.
+          get them there.
 
         </p>
       </div>
