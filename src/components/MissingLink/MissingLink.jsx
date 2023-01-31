@@ -50,7 +50,7 @@ const images = [
   {
     label: "Questions Page usage example",
     imgPath: "/ignoredImages/mlink9.png",
-  }
+  },
 ];
 
 function SwipeableTextMobileStepper() {
@@ -98,8 +98,9 @@ function SwipeableTextMobileStepper() {
         isVisible ? "visible" : "hidden"
       } landingPageContainer`}
     >
-      <Box sx={{ maxWidth: '75%', flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} className="imageBox">
         <Paper
+         className="bannerTop"
           square
           elevation={0}
           sx={{
@@ -107,7 +108,6 @@ function SwipeableTextMobileStepper() {
             alignItems: "center",
             height: 50,
             pl: 2,
-            bgcolor: "background.default",
           }}
         >
           <Typography>{images[activeStep].label}</Typography>
@@ -123,11 +123,11 @@ function SwipeableTextMobileStepper() {
             <div key={step.label}>
               {Math.abs(activeStep - index) <= 2 ? (
                 <Box
+                  className="imageBoxImg"
                   component="img"
                   sx={{
-                    height: '50%',
+                    height: "50%",
                     display: "block",
-                    maxWidth: '100%',
                     overflow: "hidden",
                     width: "100%",
                   }}
@@ -139,6 +139,7 @@ function SwipeableTextMobileStepper() {
           ))}
         </AutoPlaySwipeableViews>
         <MobileStepper
+          className="bannerBottom"
           steps={maxSteps}
           position="static"
           activeStep={activeStep}
@@ -172,6 +173,27 @@ function SwipeableTextMobileStepper() {
           }
         />
       </Box>
+
+      <div className="mlinkDesc">
+        <h1>Problem it solves:</h1>
+        <p>
+          Missing Link fills in the gaps for researchers in the medical field 
+          by discovering commonalities between patients with the same condition or disease.
+          Including symptoms, where Missing Link really shines is in the comparisons between 
+          specific personal attributes, such as hair color, height, weight, time you wake up, 
+          time you go to sleep, where you grew up, etc. Individually, any similarity between 
+          patients would be a coincidence. But by having such a vast data set of information, 
+          researchers can visually compare the number of instances of each personal attribute 
+          between patients. For example, if 5000 patients with a rare form of cancer 
+          have answered all of these questions, and 90% have the same answer regarding the city they 
+          currently live in, that would raise some eyebrows. It would be especially suspicious 
+          if a business in that same city had a chemical spill 20 years prior. Or, let's say 85% 
+          of all patients with ALS reported being left handed. Researchers will use this data 
+          to pave the way for future medical trials and testing, using the power of Missing Link to 
+          guide them there.
+
+        </p>
+      </div>
     </div>
   );
 }
