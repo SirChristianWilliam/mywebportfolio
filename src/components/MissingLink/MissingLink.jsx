@@ -11,6 +11,10 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -93,21 +97,29 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
+    <>
     <div
       className={`fade-in ${
         isVisible ? "visible" : "hidden"
       } landingPageContainer`}
     >
-      <a href="https://missinglinksolo.herokuapp.com/#/" target="_blank" className="mlh1"> Missing Link</a>
+      <a
+        href="https://missinglinksolo.herokuapp.com/#/"
+        target="_blank"
+        className="mlh1"
+      >
+        {" "}
+        Missing Link
+      </a>
       <Box sx={{ flexGrow: 1 }} className="imageBox">
         <Paper
-         className="bannerTop"
+          className="bannerTop"
           square
           elevation={0}
           sx={{
             display: "flex",
             alignItems: "center",
-            justifyContent:"center",
+            justifyContent: "center",
             height: 50,
             pl: 2,
           }}
@@ -179,24 +191,49 @@ function SwipeableTextMobileStepper() {
       <div className="mlinkDesc">
         <h1>Problem it solves:</h1>
         <p>
-          Missing Link fills in the gaps for researchers in the medical field 
-          by discovering commonalities between patients with the same condition or disease.
-          Including symptoms, where Missing Link really shines is in the comparisons between 
-          specific personal attributes, such as hair color, height, weight, time you wake up, 
-          time you go to sleep, where you grew up, etc. Individually, any similarity between 
-          patients would be a coincidence. But by having such a vast data set of information, 
-          researchers can visually compare the number of instances of each personal attribute 
-          between patients. For example, if 5000 patients with a rare form of cancer 
-          have answered all of these questions, and 90% have the same answer regarding the city they 
-          currently live in, that would raise some eyebrows. It would be especially suspicious 
-          if a business in that same city had a chemical spill 20 years prior. Or, let's say 85% 
-          of all patients with ALS reported being left handed. Researchers will use this data 
-          to pave the way for future medical trials and testing, using the power of Missing Link to 
-          get them there.
-
+          Missing Link fills in the gaps for researchers in the medical field by
+          discovering commonalities between patients with the same condition or
+          disease. Including symptoms, where Missing Link really shines is in
+          the comparisons between specific personal attributes, such as hair
+          color, height, weight, time you wake up, time you go to sleep, where
+          you grew up, etc. Individually, any similarity between patients would
+          be a coincidence. But by having such a vast data set of information,
+          researchers can visually compare the number of instances of each
+          personal attribute between patients. For example, if 5000 patients
+          with a rare form of cancer have answered all of these questions, and
+          90% have the same answer regarding the city they currently live in,
+          that would raise some eyebrows. It would be especially suspicious if a
+          business in that same city had a chemical spill 20 years prior. Or,
+          let's say 85% of all patients with ALS reported being left handed.
+          Researchers will use this data to pave the way for future medical
+          trials and testing, using the power of Missing Link to get them there.
         </p>
       </div>
+
     </div>
+
+    <div className="wireframeDivAccordianContainer">
+      <Accordion >
+        <AccordionSummary  
+          className="wireframeAccordian"
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          // id="panel1a-header"
+        >
+          <Typography>Click to view wireframe</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          <img className="wireframeImg" src="/ignoredImages/mlinkwireframe.png"  ></img>
+
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+     
+     
+    </div>
+ 
+</>
   );
 }
 
