@@ -222,8 +222,8 @@ function SwipeableTextMobileStepper() {
         >
           <Typography>Click to view wireframe</Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
+        <AccordionDetails className="wireframeContainerContainer">
+          <Typography className="wireframeImgContainer">
           <img className="wireframeImg" src="/ignoredImages/mlinkwireframe.png"  ></img>
 
           </Typography>
