@@ -220,7 +220,7 @@ function SwipeableTextMobileStepper() {
           aria-controls="panel1a-content"
           // id="panel1a-header"
         >
-          <Typography>Click to view wireframe</Typography>
+          <Typography>Click to view intial schema prototype</Typography>
         </AccordionSummary>
         <AccordionDetails className="wireframeContainerContainer">
           <Typography className="wireframeImgContainer">
