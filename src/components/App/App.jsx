@@ -19,6 +19,7 @@ import Contact from '../Contact/Contact';
 import Landing from '../Landing/Landing';
 import LinkedIn from '../LinkedIn/LinkedIn';
 import Resume from '../Resume/Resume';
+import JQueryCalcPage from '../JqueryCalcPage/JqueryCalcPage';
 import './App.css';
 function App() {
 
@@ -39,7 +40,11 @@ function App() {
     <Route path="/queerspaceCollective">
       <QueerspaceCollective/>
     </Route>
-   
+    
+    <Route path="/jqueryCalculator">
+      <JQueryCalcPage/>
+    </Route>
+
     <Route path="/missingLink">
       <MissingLink/>
     </Route>

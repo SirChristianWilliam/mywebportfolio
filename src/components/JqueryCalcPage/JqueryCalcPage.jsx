@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-// import "./MissingLink.css";
+import "./JqueryCalcPage.css";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
@@ -21,49 +21,23 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     label: "Login Page",
-    imgPath: "/ignoredImages/queerspace1.png",
-    width:'auto',
-    height:'auto'
+    imgPath: "/ignoredImages/jquery1.png",
+  },
+  {
+    label: "Landing Page / Search Page",
+    imgPath: "/ignoredImages/jquery2.png",
   },
   {
     label: "Search Page example",
-    imgPath: "/ignoredImages/queerspace3.png",
+    imgPath: "/ignoredImages/jquery3.png",
   },
   {
     label: "Results Page",
-    imgPath: "/ignoredImages/queerspace4.png",
-  },
-  {
-    label: "Results Page condition comparisons",
-    imgPath: "/ignoredImages/queerspace5.png",
-  },
-  {
-    label: "Results Page adding access key",
-    imgPath: "/ignoredImages/queerspace6.png",
-  },
-  {
-    label: "Profile Page",
-    imgPath: "/ignoredImages/queerspace7.png",
-  },
-  {
-    label: "Questions Page",
-    imgPath: "/ignoredImages/queerspace8.png",
-  },
-  {
-    label: "Questions Page usage example",
-    imgPath: "/ignoredImages/queerspace9.png",
-  },
-  {
-    label: "Questions Page usage example",
-    imgPath: "/ignoredImages/queerspace10.png",
-  },
-  {
-    label: "Questions Page usage example",
-    imgPath: "/ignoredImages/queerspace11.png",
-  },
+    imgPath: "/ignoredImages/jquery4.png",
+  } 
 ];
 
-function QueerspaceCollective() {
+function jQueryCalcPage() {
   const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
   const isFirstRender = useRef(true);
@@ -110,12 +84,12 @@ function QueerspaceCollective() {
       } landingPageContainer`}
     >
       <a
-        href="https://www.youtube.com/watch?v=0hBSFy44nWM&list=PLo9U1DCI2cVwjubh2HLulljIhdLTsC9Dj"
+        href="https://jquery-calculator.herokuapp.com/"
         target="_blank"
         className="mlh1"
       >
         {" "}
-        Queerspace Collective
+        jQuery Calculator
       </a>
       <Box sx={{ flexGrow: 1 }} className="imageBox">
         <Paper
@@ -142,7 +116,6 @@ function QueerspaceCollective() {
           {images.map((step, index) => (
             <div key={step.label}>
               {Math.abs(activeStep - index) <= 2 ? (
-     
                 <Box
                   className="imageBoxImg"
                   component="img"
@@ -198,22 +171,11 @@ function QueerspaceCollective() {
       <div className="mlinkDesc">
         <h1>Problem it solves:</h1>
         <p>
-          QUEERSPACE collective (QS) is a Minneapolis based company with the 
-          goal of connecting LGBTQ+ youth with adult mentorship programs, allowing 
-          them to feel comfortable with being who they are. QS reached out to my team 
-          and I in order to streamline some of their current functionality, primarily 
-          involving a way to create, update, edit, and delete users and events in one 
-          combined application. We created not only the ability for event creation, but 
-          also incorporated current resources from their current website such as 
-          their established mentor feedback form and resources page. This allows users to not 
-          have to keep switching between apps to locate the information they are looking for. 
-          QS places a heavy emphasis on security, so we were tasked with routing accesses 
-          and views dependent upon the current user that's logged in, whether it's Admin, Mentor, 
-          Mentee, Volunteer, or Caregiver. This app has the ability to create user accounts 
-          by sending an email with a temporary password, search through all users using advanced 
-          search methods, and add personal information to their personal profile such as pictures 
-          and bios to create a more personalized and comfortable experience. 
-       
+          Well...it's a calculator. Pretty cute puppies though so I guess that 
+          makes it a much better calculator than most. Yeah, so the problem this 
+          solved is that there are not enough calculators with cute backgrounds of 
+          puppies and this app solves that critical need. (View the deployed version 
+          to hear some neat sound effects!)
         </p>
       </div>
 
@@ -227,11 +189,11 @@ function QueerspaceCollective() {
           aria-controls="panel1a-content"
           // id="panel1a-header"
         >
-          <Typography>Click to view initial schema prototype</Typography>
+          <Typography>And it's mobile responsive! (500px +)</Typography>
         </AccordionSummary>
         <AccordionDetails className="wireframeContainerContainer">
           <Typography className="wireframeImgContainer">
-          <img className="wireframeImg" src="/ignoredImages/queerspacewireframe.png"  ></img>
+          <img className="wireframeImg" src="/ignoredImages/jquery5.png"  ></img>
 
           </Typography>
         </AccordionDetails>
@@ -244,4 +206,4 @@ function QueerspaceCollective() {
   );
 }
 
-export default QueerspaceCollective;
+export default jQueryCalcPage;
