@@ -26,10 +26,6 @@ const images = [
     height:'auto'
   },
   {
-    label: "Landing Page / Search Page",
-    imgPath: "/ignoredImages/queerspace2.png",
-  },
-  {
     label: "Search Page example",
     imgPath: "/ignoredImages/queerspace3.png",
   },
@@ -202,22 +198,22 @@ function QueerspaceCollective() {
       <div className="mlinkDesc">
         <h1>Problem it solves:</h1>
         <p>
-          Missing Link fills in the gaps for researchers in the medical field by
-          discovering commonalities between patients with the same condition or
-          disease. Including symptoms, where Missing Link really shines is in
-          the comparisons between specific personal attributes, such as hair
-          color, height, weight, time you wake up, time you go to sleep, where
-          you grew up, etc. Individually, any similarity between patients would
-          be a coincidence. But by having such a vast data set of information,
-          researchers can visually compare the number of instances of each
-          personal attribute between patients. For example, if 5000 patients
-          with a rare form of cancer have answered all of these questions, and
-          90% have the same answer regarding the city they currently live in,
-          that would raise some eyebrows. It would be especially suspicious if a
-          business in that same city had a chemical spill 20 years prior. Or,
-          let's say 85% of all patients with ALS reported being left handed.
-          Researchers will use this data to pave the way for future medical
-          trials and testing, using the power of Missing Link to get them there.
+          QUEERSPACE collective (QS) is a Minneapolis based company with the 
+          goal of connecting LGBTQ+ youth with adult mentorship programs, allowing 
+          them to feel comfortable with being who they are. QS reached out to my team 
+          and I in order to streamline some of their current functionality, primarily 
+          involving a way to create, update, edit, and delete users and events in one 
+          combined application. We created not only the ability for event creation, but 
+          also incorporated current resources from their current website such as 
+          their established mentor feedback form and resources page. This allows users to not 
+          have to keep switching between apps to locate the information they are looking for. 
+          QS places a heavy emphasis on security, so we were tasked with routing accesses 
+          and views dependent upon the current user that's logged in, whether it's Admin, Mentor, 
+          Mentee, Volunteer, or Caregiver. This app has the ability to create user accounts 
+          by sending an email with a temporary password, search through all users using advanced 
+          search methods, and add personal information to their personal profile such as pictures 
+          and bios to create a more personalized and comfortable experience. 
+       
         </p>
       </div>
 

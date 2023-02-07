@@ -8,10 +8,12 @@
   /* margin:auto; */
   max-width: 400px;
   box-shadow: 0px 0px 50px tan, -2px 4px 15px black;
-  
+  transition:.5s;
 }
 .profileImgContainer img:hover {
    box-shadow: 0px 0px 50px tan;
+   border-radius: 52% 64% 26% 0;
+
 }
 .profileImgContainer img:active, .profileImgContainer:active .landingAboutContainer {
    border:3px solid transparent;
