@@ -21,45 +21,45 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     label: "Login Page",
+    imgPath: "/ignoredImages/queerspace11.png",
+  },
+  {
+    label: "Landing Page",
     imgPath: "/ignoredImages/queerspace1.png",
     width:'auto',
     height:'auto'
   },
   {
-    label: "Search Page example",
+    label: "Upcoming Events",
     imgPath: "/ignoredImages/queerspace3.png",
   },
   {
-    label: "Results Page",
+    label: "Feedback Form",
     imgPath: "/ignoredImages/queerspace4.png",
   },
   {
-    label: "Results Page condition comparisons",
+    label: "User Search Page",
     imgPath: "/ignoredImages/queerspace5.png",
   },
   {
-    label: "Results Page adding access key",
+    label: "User Registration Page",
     imgPath: "/ignoredImages/queerspace6.png",
   },
   {
-    label: "Profile Page",
+    label: "Admin Event View Page",
     imgPath: "/ignoredImages/queerspace7.png",
   },
   {
-    label: "Questions Page",
+    label: "Search Events Example",
     imgPath: "/ignoredImages/queerspace8.png",
   },
   {
-    label: "Questions Page usage example",
+    label: "Add New Resource Page",
     imgPath: "/ignoredImages/queerspace9.png",
   },
   {
-    label: "Questions Page usage example",
+    label: "View Specific Event",
     imgPath: "/ignoredImages/queerspace10.png",
-  },
-  {
-    label: "Questions Page usage example",
-    imgPath: "/ignoredImages/queerspace11.png",
   },
 ];
 

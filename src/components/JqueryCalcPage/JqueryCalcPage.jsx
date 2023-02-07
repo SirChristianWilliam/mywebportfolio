@@ -20,19 +20,19 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "Login Page",
+    label: "Main",
     imgPath: "/ignoredImages/jquery1.png",
   },
   {
-    label: "Landing Page / Search Page",
+    label: "Calculations In Use",
     imgPath: "/ignoredImages/jquery2.png",
   },
   {
-    label: "Search Page example",
+    label: "Calculations History On Left",
     imgPath: "/ignoredImages/jquery3.png",
   },
   {
-    label: "Results Page",
+    label: "More Results",
     imgPath: "/ignoredImages/jquery4.png",
   } 
 ];
