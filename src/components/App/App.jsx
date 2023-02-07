@@ -20,6 +20,7 @@ import Landing from '../Landing/Landing';
 import LinkedIn from '../LinkedIn/LinkedIn';
 import Resume from '../Resume/Resume';
 import JQueryCalcPage from '../JqueryCalcPage/JqueryCalcPage';
+import Surveys from '../Surveys/Surveys';
 import './App.css';
 function App() {
 
@@ -33,6 +34,9 @@ function App() {
 
     <Route path="/home">
       <HomePage/>
+    </Route>
+    <Route path="/reduxsurveys">
+      <Surveys/>
     </Route>
     <Route path="/nav">
       <Nav/>
