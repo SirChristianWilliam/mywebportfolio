@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import "./Surveys.css";
+import "./Todo.css";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
@@ -20,40 +20,36 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "Landing Page/ Feeling",
-    imgPath: "/ignoredImages/feedback1.png",
+    label: "Main Page",
+    imgPath: "/ignoredImages/todo1.png",
   },
   {
-    label: "Landing Page Input/ Feeling",
-    imgPath: "/ignoredImages/feedback2.png",
+    label: "Marking Tasks as Complete/Incomplete",
+    imgPath: "/ignoredImages/todo2.png",
   },
   {
-    label: "Understanding (page 2)",
-    imgPath: "/ignoredImages/feedback3.png",
+    label: "Delete Task w/Confirmation",
+    imgPath: "/ignoredImages/todo3.png",
   },
   {
-    label: "Supported (page 3)",
-    imgPath: "/ignoredImages/feedback4.png",
+    label: "Adding a New Task",
+    imgPath: "/ignoredImages/todo4.png",
   },
   {
-    label: "Comments (page 4)",
-    imgPath: "/ignoredImages/feedback5.png",
+    label: "Task Successfully Added (see bottom of list)",
+    imgPath: "/ignoredImages/todo5.png",
   },
   {
-    label: "Review Answers",
-    imgPath: "/ignoredImages/feedback6.png",
+    label: "Overflow Management for Longer Lists",
+    imgPath: "/ignoredImages/todo6.png",
   },
   {
-    label: "Confirmation Page",
-    imgPath: "/ignoredImages/feedback7.png",
-  },
-  {
-    label: "Admin View",
-    imgPath: "/ignoredImages/feedback8.png",
+    label: "Viewport Responsive Design ",
+    imgPath: "/ignoredImages/todo7.png",
   },
 ];
 
-function Surveys() {
+function Todo() {
   const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
   const isFirstRender = useRef(true);
@@ -100,14 +96,14 @@ function Surveys() {
       } landingPageContainer`}
     >
       <a
-        href="https://redux-surveys.herokuapp.com/#/"
+        href="#"
         target="_blank"
         className="mlh1"
       >
         {" "}
-        Redux Surveys
+        To-do List
       </a>
-      <Box sx={{ flexGrow: 1 }} className="imageBox reduxBox">
+      <Box sx={{ flexGrow: 1 }} className="imageBox">
         <Paper
           className="bannerTop"
           square
@@ -187,15 +183,15 @@ function Surveys() {
       <div className="mlinkDesc">
         <h1>Problem it solves:</h1>
         <p>
-         Redux Surveys is a demonstrational practice assignment where 
-         I was first introduced to Redux, storing/changing state, 
-         and creating a functional survey for users! 
-         As I was about to post this project, I realized the styling was 
-         horrendous, so I met up with my old friend Midjourney and created an 
-         aesthetic background image and modeled the rest of the styling surrounding it. 
-         Admins are also able to view their admin page (you will have to add "admin" at 
-         the end of the URL on the deployed site), and view past responses. This site is also 
-         mobile responsive and looks good on almost all viewports! Feel free to leave some feedback!
+          To-do list, a must for any new web developer. 
+          Because to-do lists are such a commonly created app, I decided 
+          to go a bit above and beyond with the styling to set it apart. 
+          This project involved connecting an external database and 
+          server/client side communications 
+          for adding, deleting, and updating tasks. If you're like me, when 
+          adding tasks of what I need to get done, I almost always do this on 
+          my phone. Such as it is, this app is viewport responsive and allows usage 
+          on almost all screen sizes. Click the link at the top of the page and try it out!
         </p>
       </div>
 
@@ -209,12 +205,12 @@ function Surveys() {
           aria-controls="panel1a-content"
           // id="panel1a-header"
         >
-          <Typography>Click to view a surprise</Typography>
+          <Typography> Extra Project Details </Typography>
         </AccordionSummary>
         <AccordionDetails className="wireframeContainerContainer">
           <Typography className="wireframeImgContainer">
-          <img className="wireframeImg" src="/ignoredImages/meme.jpg"  ></img>
-
+          Background image for this project is provided by: &nbsp; 
+          <a href="https://wallpaperaccess.com/notebook" target="_blank">wallpaperaccess</a>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -226,4 +222,4 @@ function Surveys() {
   );
 }
 
-export default Surveys;
+export default Todo;
