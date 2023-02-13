@@ -211,7 +211,7 @@ function Todo() {
           <Typography className="wireframeImgContainer">
           Background image for this project is provided by: &nbsp; 
           <a href="https://wallpaperaccess.com/notebook" target="_blank">wallpaperaccess</a>
-          </Typography>
+                  </Typography>
         </AccordionDetails>
       </Accordion>
      

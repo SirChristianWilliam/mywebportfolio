@@ -199,19 +199,19 @@ function QueerspaceCollective() {
         <h1>Problem it solves:</h1>
         <p>
           QUEERSPACE collective (QS) is a Minneapolis based company with the 
-          goal of connecting LGBTQ+ youth with adult mentorship programs, allowing 
+          goal of connecting LGBTQ+ youth with adult mentors, allowing 
           them to feel comfortable with being who they are. QS reached out to my team 
-          and I in order to streamline some of their current functionality, primarily 
+          and I in order to streamline some of their current functionalities, primarily 
           involving a way to create, update, edit, and delete users and events in one 
           combined application. We created not only the ability for event creation, but 
-          also incorporated current resources from their current website such as 
+          also incorporated current resources from their existing website such as 
           their established mentor feedback form and resources page. This allows users to not 
           have to keep switching between apps to locate the information they are looking for. 
           QS places a heavy emphasis on security, so we were tasked with routing accesses 
           and views dependent upon the current user that's logged in, whether it's Admin, Mentor, 
           Mentee, Volunteer, or Caregiver. This app has the ability to create user accounts 
           by sending an email with a temporary password, search through all users using advanced 
-          search methods, and add personal information to their personal profile such as pictures 
+          parsing methods, and add personal information to their personal profile such as pictures 
           and bios to create a more personalized and comfortable experience. 
        
         </p>
