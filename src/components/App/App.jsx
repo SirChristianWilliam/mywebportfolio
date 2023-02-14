@@ -22,6 +22,7 @@ import Resume from '../Resume/Resume';
 import JQueryCalcPage from '../JqueryCalcPage/JqueryCalcPage';
 import Surveys from '../Surveys/Surveys';
 import Todo from '../Todo/Todo';
+import Movies from '../Movies/Movies';
 import './App.css';
 function App() {
 
@@ -39,6 +40,10 @@ function App() {
 
     <Route path="/todolist">
       <Todo/>
+    </Route>
+
+    <Route path="/netclips">
+      <Movies/>
     </Route>
 
     <Route path="/reduxsurveys">

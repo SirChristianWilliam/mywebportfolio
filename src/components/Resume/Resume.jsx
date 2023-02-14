@@ -29,7 +29,7 @@ function Resume() {
     <>
        <div className={`fade-in ${isVisible ? 'visible' : 'hidden'} resumeContainer`}>
         <h3 className="clickToOpen">
-          <a href="ignoredImages/Christian Maki Resume.pdf" target="_blank">
+          <a href="./ignoredImages/Christian Maki Resume.pdf" target="_blank">
             If you can't see resumé, click here to view in a new tab
           </a>
         </h3>

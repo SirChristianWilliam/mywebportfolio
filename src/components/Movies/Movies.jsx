@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import "./Todo.css";
+import "./Movies.css";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
@@ -20,36 +20,26 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "Main Page",
-    imgPath: "/ignoredImages/todo1.png",
+    label: "Home Page/ Movies List",
+    imgPath: "/ignoredImages/netclips1.png",
   },
   {
-    label: "Marking Tasks as Complete/Incomplete",
-    imgPath: "/ignoredImages/todo2.png",
+    label: "Hover On Selection Demo",
+    imgPath: "/ignoredImages/netclips2.png",
+    width:'auto',
+    height:'auto'
   },
   {
-    label: "Delete Task w/Confirmation",
-    imgPath: "/ignoredImages/todo3.png",
+    label: "Selected Film",
+    imgPath: "/ignoredImages/netclips3.png",
   },
   {
-    label: "Adding a New Task",
-    imgPath: "/ignoredImages/todo4.png",
-  },
-  {
-    label: "Task Successfully Added (see bottom of list)",
-    imgPath: "/ignoredImages/todo5.png",
-  },
-  {
-    label: "Overflow Management for Longer Lists",
-    imgPath: "/ignoredImages/todo6.png",
-  },
-  {
-    label: "Viewport Responsive Design ",
-    imgPath: "/ignoredImages/todo7.png",
+    label: "Return to Movies List",
+    imgPath: "/ignoredImages/netclips4.png",
   },
 ];
 
-function Todo() {
+function Movies() {
   const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
   const isFirstRender = useRef(true);
@@ -101,7 +91,7 @@ function Todo() {
         className="mlh1"
       >
         {" "}
-        To-do List
+        Netclips
       </a>
       <Box sx={{ flexGrow: 1 }} className="imageBox">
         <Paper
@@ -128,6 +118,7 @@ function Todo() {
           {images.map((step, index) => (
             <div key={step.label}>
               {Math.abs(activeStep - index) <= 2 ? (
+     
                 <Box
                   className="imageBoxImg"
                   component="img"
@@ -183,15 +174,14 @@ function Todo() {
       <div className="mlinkDesc">
         <h1>Problem it solves:</h1>
         <p>
-          To-do list, a must for any new web developer. 
-          Because to-do lists are such a commonly created app, I decided 
-          to go a bit above and beyond with the styling to set it apart. 
-          This project involved connecting an external database and 
-          server/client side communications 
-          for adding, deleting, and updating tasks. If you're like me, when 
-          adding tasks of what I need to get done, I almost always do this on 
-          my phone. Such as it is, this app is viewport responsive and allows usage 
-          on almost all screen sizes. Click the link at the top of the page and try it out!
+         Netclips is my solution for organizing your movie collection in a warm, 
+         comfortable, and familiar manner. Currently, users are able to view the current list 
+         of movies that are saved in the database. Upon selection, they are able to 
+         view the details of the film, as well as the specific genres for that movie. 
+         The site is fun and interactable, with a very cohesive and welcoming vibe. At least, you know, 
+         in my opinion. Check back once in a while as I'll be adding the ability to 
+         create, edit, and delete movies from this collection so that you'll be able to 
+         create your own personalized favorite list of flicks!
         </p>
       </div>
 
@@ -205,13 +195,13 @@ function Todo() {
           aria-controls="panel1a-content"
           // id="panel1a-header"
         >
-          <Typography> Extra Project Details </Typography>
+          <Typography>Oh, but is it responsive?</Typography>
         </AccordionSummary>
         <AccordionDetails className="wireframeContainerContainer">
-          <Typography  >
-          Background image for this project is provided by: &nbsp; 
-          <a href="https://wallpaperaccess.com/notebook" target="_blank">wallpaperaccess</a>
-                  </Typography>
+          <Typography >
+          <img className="wireframeImg" src="/ignoredImages/netclips6.png"  ></img>
+          <h4 >It sure is!</h4>
+          </Typography>
         </AccordionDetails>
       </Accordion>
      
@@ -222,4 +212,4 @@ function Todo() {
   );
 }
 
-export default Todo;
+export default Movies;
