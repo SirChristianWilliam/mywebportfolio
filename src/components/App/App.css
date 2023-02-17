@@ -12,5 +12,15 @@ body {
     background-attachment: fixed;
     background-size:cover;
     font-family: 'Montserrat', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
- 
+ .noclass {
+    color:red;
+ }
+
+ .css-1vlizkz-MuiPaper-root-MuiAppBar-root {
+     display:fixed !important;
+     width:100% !important;
+     overflow:hidden !important
+ }

@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 // import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
+import '../scss/styles.scss'
 
 import AboutPage from '../AboutPage/AboutPage';
 import Footer from '../Footer/Footer';
@@ -27,7 +28,27 @@ import './App.css';
 function App() {
 
   return (
+
+
     <BrowserRouter>
+      <div  className='noclass'>	
+	<div class="bird-container bird-container--one">
+		<div class="bird bird--one"></div>
+	</div>
+	
+	<div class="bird-container bird-container--two">
+		<div class="bird bird--two"></div>
+	</div>
+	
+	<div class="bird-container bird-container--three">
+		<div class="bird bird--three"></div>
+	</div>
+	
+	<div class="bird-container bird-container--four">
+		<div class="bird bird--four"></div>
+	</div>
+	
+</div>
     <Nav/>
     
     <Route path="/about">

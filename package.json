@@ -56,5 +56,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "heroku-run-build-script": true
+  "heroku-run-build-script": true,
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
 }
