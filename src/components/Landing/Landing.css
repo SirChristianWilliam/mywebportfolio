@@ -95,9 +95,7 @@
     overflow-y: scroll !important;
     overflow-x: hidden !important;
   }
-  .testimonials {
-    /* overflow: scroll; */
-  }
+  
   .testimonials img {
     min-width: 650px;
     width: 100%;
@@ -113,9 +111,7 @@
     padding-right: 0;
     /* overflow: scroll !important; */
   }
-  .scrollright {
-    /* visibility: visible; */
-  }
+ 
   .mobileTestimonials img {
    width:100px;
    width: 150px;

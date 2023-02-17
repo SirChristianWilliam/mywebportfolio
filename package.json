@@ -6,6 +6,7 @@
   "engines": {
     "node": "16.x"
   },
+  "homepage": "https://sirchristianwilliam.github.io/mywebportfolio",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.245.0",
     "@emotion/react": "^11.10.5",
@@ -46,9 +47,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "eject": "react-scripts eject"
   },
   "browserslist": [
     ">0.2%",
@@ -58,6 +61,7 @@
   ],
   "heroku-run-build-script": true,
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "node-sass": "^7.0.3"
   }
 }
