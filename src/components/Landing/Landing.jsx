@@ -26,6 +26,7 @@ function Landing() {
 
   return (
     <>
+    
       <div
         className={`fade-in ${
           isVisible ? "visible" : "hidden"
@@ -38,7 +39,20 @@ function Landing() {
             <h3>Full Stack Software Engineer</h3>
           </div>
         </div>
-
+<div className="thankYou">
+  <h2>
+    Thanks
+  </h2>
+  <h2>
+    For
+  </h2>
+  <h2>
+    Stopping
+  </h2>
+  <h2>
+    By!
+  </h2>
+</div>
         <div className="mobileTestimonials">
           <div className="mobileTIimg">
             <img src="/ignoredImages/marcc.png" width="200px" />

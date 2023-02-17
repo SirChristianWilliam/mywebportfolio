@@ -18,7 +18,7 @@
 .profileImgContainer:active .landingAboutContainer {
   border: 3px solid transparent;
   animation-name: spin;
-  max-width: 43%;
+  /* max-width: 43%; */
     
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -87,6 +87,7 @@
 
     /* margin-right: 135px; */
   }
+
   .landingAboutContainer {
    margin-left:36px;
   }
@@ -179,8 +180,35 @@
  }
 
 
+ @keyframes slideInLeft {
+   0% {
+     transform: translateX(-100%);
+   }
+   100% {
+     transform: translateX(0);
+   }
+ }
 
+   .landingPageContainer {
+     animation: 1s ease-out 0s 1 slideInLeft;
+     /* background: #666; */
+     padding: 40px;
+   }
 
+   .thankYou {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 15px;
+      top: 100px;
+      color:black;
+      text-shadow:0px 0px 1px white, 0px 0px 5px white, 0px 0px 2px white,0px 0px 1px white, 0px 0px 5px white, 0px 0px 2px white;
+   
+   }
+  
+ 
+  
  
 
 
