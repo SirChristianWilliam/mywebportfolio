@@ -12,12 +12,14 @@
 }
 .profileImgContainer img:hover {
   box-shadow: 0px 0px 50px tan;
-  border-radius: 52% 64% 26% 0;
+  /* border-radius: 52% 64% 26% 0; */
 }
 .profileImgContainer img:active,
 .profileImgContainer:active .landingAboutContainer {
   border: 3px solid transparent;
   animation-name: spin;
+  max-width: 43%;
+    
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: normal;
@@ -79,11 +81,18 @@
 }
 @media only screen and (max-width: 700px) {
   .profileImgContainer img:first-child {
-    width: 400px;
+    width: 90%;
+    margin-left: 36px;
+
+
     /* margin-right: 135px; */
   }
+  .landingAboutContainer {
+   margin-left:36px;
+  }
   .landingPageContainer {
-    /* overflow: scroll; */
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
   }
   .testimonials {
     /* overflow: scroll; */
@@ -112,7 +121,7 @@
 
   }
   .mobileTestimonials {
-   padding-top:50px;
+   /* padding-top:50px; */
    display:flex !important;
    flex-wrap: wrap;
    flex-direction: column;

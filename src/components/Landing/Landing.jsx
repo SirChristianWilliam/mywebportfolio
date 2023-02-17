@@ -50,7 +50,7 @@ function Landing() {
               no doubt he will continue to excel in his career."
               <p>
                 <br></br>
-                <a href="https://www.linkedin.com/in/christian-maki/">
+                <a href="https://www.linkedin.com/in/christian-maki/" target="_blank">
                   Click to view the full testimonial
                 </a>
               </p>
@@ -59,14 +59,14 @@ function Landing() {
 
           <div className="mobileTIimg">
             <img src="/ignoredImages/tt.png" width="200px" />
-            <h4><a href="https://www.linkedin.com/in/tiatheisen/">Tia Theisen</a></h4>
+            <h4><a href="https://www.linkedin.com/in/tiatheisen/" target="_blank">Tia Theisen</a></h4>
             <p>
               {" "}
               "Chris was always willing to take a look at my code and loved to help me problem-solve if I was stuck on anything"
               "Chris has demonstrated his ability to be highly adaptive, flexible, and to quickly pick up on new skills and technologies that are thrown his way."
               <p>
                 <br></br>
-                <a href="https://www.linkedin.com/in/christian-maki/">
+                <a href="https://www.linkedin.com/in/christian-maki/" target="_blank">
                   Click to view the full testimonial
                 </a>
               </p>
@@ -74,14 +74,14 @@ function Landing() {
           </div>
           <div className="mobileTIimg">
             <img src="/ignoredImages/momo.png" width="200px" />
-            <h4><a href="https://www.linkedin.com/in/urlmohamedyusuf/">Mohamed Yusuf</a></h4>
+            <h4><a href="https://www.linkedin.com/in/urlmohamedyusuf/" target="_blank">Mohamed Yusuf</a></h4>
              <p>
               {" "}
               "Chris is a natural leader and team player, who consistently goes above and beyond to help his colleagues and maintain a positive attitude"
               "I can confidently say that any company that hires him will not regret their decision. He is a great friend of mine and I am excited to see the positive and innovative changes he makes in the world."
               <p>
                 <br></br>
-                <a href="https://www.linkedin.com/in/christian-maki/">
+                <a href="https://www.linkedin.com/in/christian-maki/" target="_blank">
                   Click to view the full testimonial
                 </a>
               </p>
