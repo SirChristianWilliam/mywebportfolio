@@ -8,22 +8,22 @@ import {
 } from 'react-router-dom';
 
 // import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
-import '../scss/styles.scss'
+import '../src/components/scss/styles.scss'
 
-import AboutPage from '../AboutPage/AboutPage';
-import Footer from '../Footer/Footer';
-import HomePage from '../HomePage/HomePage';
-import MissingLink from '../MissingLink/MissingLink';
-import Nav from '../Nav/Nav';
-import QueerspaceCollective from '../QueerspaceCollective/QueerspaceCollective';
-import Contact from '../Contact/Contact';
-import Landing from '../Landing/Landing';
-import LinkedIn from '../LinkedIn/LinkedIn';
-import Resume from '../Resume/Resume';
-import JQueryCalcPage from '../JqueryCalcPage/JqueryCalcPage';
-import Surveys from '../Surveys/Surveys';
-import Todo from '../Todo/Todo';
-import Movies from '../Movies/Movies';
+import AboutPage from './components/AboutPage/AboutPage';
+import Footer from './components/Footer/Footer';
+import HomePage from './components/HomePage/HomePage';
+import MissingLink from './components/MissingLink/MissingLink';
+import Nav from './components/Nav/Nav';
+import QueerspaceCollective from './components/QueerspaceCollective/QueerspaceCollective';
+import Contact from './components/Contact/Contact';
+import Landing from './components/Landing/Landing';
+import LinkedIn from './components/LinkedIn/LinkedIn';
+import Resume from './components/Resume/Resume';
+import JQueryCalcPage from './components/JqueryCalcPage/JqueryCalcPage';
+import Surveys from './components/Surveys/Surveys';
+import Todo from './components/Todo/Todo';
+import Movies from './components/Movies/Movies';
 import './App.css';
 function App() {
 
