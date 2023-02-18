@@ -95,7 +95,7 @@ function App() {
       <LinkedIn/>
     </Route>
       
-    <Route path="/mywebportfolio/contact">
+    <Route path="/contact">
       <Contact/>
     </Route>
 
