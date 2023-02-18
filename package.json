@@ -5,7 +5,9 @@
   "proxy": "http://localhost:3000",
   "engines": {
     "node": "16.x"
-  },  "dependencies": {
+  }, 
+  "homepage": "https://sirchristianwilliam.github.io/mywebportfolio/",
+   "dependencies": {
     "@aws-sdk/client-s3": "^3.245.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
