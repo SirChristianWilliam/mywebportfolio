@@ -33,7 +33,7 @@ function Landing() {
         } landingPageContainer`}
       >
         <div className="profileImgContainer">
-          <img src="/ignoredImages/mePro2.jpg" />
+          <img src=" /ignoredImages/mePro2.jpg" />
           <div className="landingAboutContainer">
             <h2>Christian W Maki </h2>
             <h3>Full Stack Software Engineer</h3>
