@@ -21,31 +21,31 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     label: "Main Page",
-    imgPath: "/ignoredImages/todo1.png",
+    imgPath: "./ignoredImages/todo1.png",
   },
   {
     label: "Marking Tasks as Complete/Incomplete",
-    imgPath: "/ignoredImages/todo2.png",
+    imgPath: "./ignoredImages/todo2.png",
   },
   {
     label: "Delete Task w/Confirmation",
-    imgPath: "/ignoredImages/todo3.png",
+    imgPath: "./ignoredImages/todo3.png",
   },
   {
     label: "Adding a New Task",
-    imgPath: "/ignoredImages/todo4.png",
+    imgPath: "./ignoredImages/todo4.png",
   },
   {
     label: "Task Successfully Added (see bottom of list)",
-    imgPath: "/ignoredImages/todo5.png",
+    imgPath: "./ignoredImages/todo5.png",
   },
   {
     label: "Overflow Management for Longer Lists",
-    imgPath: "/ignoredImages/todo6.png",
+    imgPath: "./ignoredImages/todo6.png",
   },
   {
     label: "Viewport Responsive Design ",
-    imgPath: "/ignoredImages/todo7.png",
+    imgPath: "./ignoredImages/todo7.png",
   },
 ];
 

@@ -37,7 +37,7 @@ function Resume() {
           className='iframeresume'
           width="75%"
           height="900px"
-          src="ignoredImages/Christian Maki Resume.pdf"
+          src="./ignoredImages/Christian Maki Resume.pdf"
           title="My Resume"
         ></iframe>
       </div>

@@ -21,39 +21,39 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     label: "Login Page",
-    imgPath: "/ignoredImages/mlink1.png",
+    imgPath: "./ignoredImages/mlink1.png",
   },
   {
     label: "Landing Page / Search Page",
-    imgPath: "/ignoredImages/mlink2.png",
+    imgPath: "./ignoredImages/mlink2.png",
   },
   {
     label: "Search Page example",
-    imgPath: "/ignoredImages/mlink3.png",
+    imgPath: "./ignoredImages/mlink3.png",
   },
   {
     label: "Results Page",
-    imgPath: "/ignoredImages/mlink4.png",
+    imgPath: "./ignoredImages/mlink4.png",
   },
   {
     label: "Results Page condition comparisons",
-    imgPath: "/ignoredImages/mlink5.png",
+    imgPath: "./ignoredImages/mlink5.png",
   },
   {
     label: "Results Page adding access key",
-    imgPath: "/ignoredImages/mlink6.png",
+    imgPath: "./ignoredImages/mlink6.png",
   },
   {
     label: "Profile Page",
-    imgPath: "/ignoredImages/mlink7.png",
+    imgPath: "./ignoredImages/mlink7.png",
   },
   {
     label: "Questions Page",
-    imgPath: "/ignoredImages/mlink8.png",
+    imgPath: "./ignoredImages/mlink8.png",
   },
   {
     label: "Questions Page usage example",
-    imgPath: "/ignoredImages/mlink9.png",
+    imgPath: "./ignoredImages/mlink9.png",
   },
 ];
 
@@ -224,7 +224,7 @@ function SwipeableTextMobileStepper() {
         </AccordionSummary>
         <AccordionDetails className="wireframeContainerContainer">
           <Typography className="wireframeImgContainer">
-          <img className="wireframeImg" src="/ignoredImages/mlinkwireframe.png"  ></img>
+          <img className="wireframeImg" src="./ignoredImages/mlinkwireframe.png"  ></img>
 
           </Typography>
         </AccordionDetails>

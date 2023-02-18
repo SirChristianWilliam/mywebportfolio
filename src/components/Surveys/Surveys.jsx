@@ -21,35 +21,35 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     label: "Landing Page/ Feeling",
-    imgPath: "/ignoredImages/feedback1.png",
+    imgPath: "./ignoredImages/feedback1.png",
   },
   {
     label: "Landing Page Input/ Feeling",
-    imgPath: "/ignoredImages/feedback2.png",
+    imgPath: "./ignoredImages/feedback2.png",
   },
   {
     label: "Understanding (page 2)",
-    imgPath: "/ignoredImages/feedback3.png",
+    imgPath: "./ignoredImages/feedback3.png",
   },
   {
     label: "Supported (page 3)",
-    imgPath: "/ignoredImages/feedback4.png",
+    imgPath: "./ignoredImages/feedback4.png",
   },
   {
     label: "Comments (page 4)",
-    imgPath: "/ignoredImages/feedback5.png",
+    imgPath: "./ignoredImages/feedback5.png",
   },
   {
     label: "Review Answers",
-    imgPath: "/ignoredImages/feedback6.png",
+    imgPath: "./ignoredImages/feedback6.png",
   },
   {
     label: "Confirmation Page",
-    imgPath: "/ignoredImages/feedback7.png",
+    imgPath: "./ignoredImages/feedback7.png",
   },
   {
     label: "Admin View",
-    imgPath: "/ignoredImages/feedback8.png",
+    imgPath: "./ignoredImages/feedback8.png",
   },
 ];
 
@@ -213,7 +213,7 @@ function Surveys() {
         </AccordionSummary>
         <AccordionDetails className="wireframeContainerContainer">
           <Typography className="wireframeImgContainer">
-          <img className="wireframeImg" src="/ignoredImages/meme.jpg"  ></img>
+          <img className="wireframeImg" src="./ignoredImages/meme.jpg"  ></img>
 
           </Typography>
         </AccordionDetails>

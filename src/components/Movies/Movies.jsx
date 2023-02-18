@@ -21,21 +21,21 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     label: "Home Page/ Movies List",
-    imgPath: "/ignoredImages/netclips1.png",
+    imgPath: "./ignoredImages/netclips1.png",
   },
   {
     label: "Hover On Selection Demo",
-    imgPath: "/ignoredImages/netclips2.png",
+    imgPath: "./ignoredImages/netclips2.png",
     width:'auto',
     height:'auto'
   },
   {
     label: "Selected Film",
-    imgPath: "/ignoredImages/netclips3.png",
+    imgPath: "./ignoredImages/netclips3.png",
   },
   {
     label: "Return to Movies List",
-    imgPath: "/ignoredImages/netclips4.png",
+    imgPath: "./ignoredImages/netclips4.png",
   },
 ];
 
@@ -199,7 +199,7 @@ function Movies() {
         </AccordionSummary>
         <AccordionDetails className="wireframeContainerContainer">
           <Typography >
-          <img className="wireframeImg" src="/ignoredImages/netclips6.png"  ></img>
+          <img className="wireframeImg" src="./ignoredImages/netclips6.png"  ></img>
           <h4 >It sure is!</h4>
           </Typography>
         </AccordionDetails>

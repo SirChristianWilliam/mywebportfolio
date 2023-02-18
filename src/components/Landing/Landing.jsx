@@ -33,7 +33,7 @@ function Landing() {
         } landingPageContainer`}
       >
         <div className="profileImgContainer">
-          <img src=" /ignoredImages/mePro2.jpg" />
+          <img src=" ./ignoredImages/mePro2.jpg" />
           <div className="landingAboutContainer">
             <h2>Christian W Maki </h2>
             <h3>Full Stack Software Engineer</h3>
@@ -55,7 +55,7 @@ function Landing() {
 </div>
         <div className="mobileTestimonials">
           <div className="mobileTIimg">
-            <img src="/ignoredImages/marcc.png" width="200px" />
+            <img src="./ignoredImages/marcc.png" width="200px" />
             <h4><a href="https://www.linkedin.com/in/the-marc-mccarthy/" target="_blank">Marc Mccarthy</a></h4>
             <p>
               {" "}
@@ -72,7 +72,7 @@ function Landing() {
           </div>
 
           <div className="mobileTIimg">
-            <img src="/ignoredImages/tt.png" width="200px" />
+            <img src="./ignoredImages/tt.png" width="200px" />
             <h4><a href="https://www.linkedin.com/in/tiatheisen/" target="_blank">Tia Theisen</a></h4>
             <p>
               {" "}
@@ -87,7 +87,7 @@ function Landing() {
             </p>
           </div>
           <div className="mobileTIimg">
-            <img src="/ignoredImages/momo.png" width="200px" />
+            <img src="./ignoredImages/momo.png" width="200px" />
             <h4><a href="https://www.linkedin.com/in/urlmohamedyusuf/" target="_blank">Mohamed Yusuf</a></h4>
              <p>
               {" "}
@@ -106,7 +106,7 @@ function Landing() {
         <div className="testimonials">
           <div className="scrollerContainer">
             <img
-              src="/ignoredImages/marc.png"
+              src="./ignoredImages/marc.png"
               width="100%"
               className="hidetesto"
             />
@@ -114,7 +114,7 @@ function Landing() {
 
           <div className="scrollerContainer">
             <img
-              src="/ignoredImages/tia.png"
+              src="./ignoredImages/tia.png"
               width="100%"
               className="hidetesto"
             />
@@ -122,7 +122,7 @@ function Landing() {
 
           <div className="scrollerContainer">
             <img
-              src="/ignoredImages/mohamed.png"
+              src="./ignoredImages/mohamed.png"
               width="100%"
               className="hidetesto"
             />
