@@ -6,8 +6,8 @@
   "engines": {
     "node": "16.x"
   }, 
-  "homepage": "https://sirchristianwilliam.github.io/mywebportfolio/",
-   "dependencies": {
+  "homepage": ".",
+     "dependencies": {
     "@aws-sdk/client-s3": "^3.245.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
